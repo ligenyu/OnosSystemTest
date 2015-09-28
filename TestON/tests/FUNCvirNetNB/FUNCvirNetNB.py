@@ -1055,8 +1055,6 @@ class FUNCvirNetNB:
                 onpass="The Json is wrong,can't post",
                 onfail="Wrong Json can post successfully " )
 
-        if Poststatus != '500':
-            main.log.error( " Wrong Json can post successfully" )
     
     def CASE12( self, main ):
 
@@ -1115,8 +1113,6 @@ class FUNCvirNetNB:
                 onpass="The Json is wrong,can't post",
                 onfail="Wrong Json can post successfully " )
         
-        if Poststatus != '500':
-            main.log.error( " Wrong Json can post successfully" )
     
     def CASE13( self, main ):
 
@@ -1190,5 +1186,4 @@ class FUNCvirNetNB:
                 onpass="The Json is wrong,can't post",
                 onfail="Wrong Json can post successfully" )
         
-        if Poststatus != '500':
-            main.log.error( " Wrong Json can post successfully" )  
+
