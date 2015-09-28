@@ -1041,8 +1041,8 @@ class FUNCvirNetNB:
         network.id = '030d6d3d-fa36-45bf-ae2b-4f4bc43a54dc'
         network.tenant_id = '26cd996094344a0598b0a1af1d525cdc'
         network.admin_state_up = 'tttttttttt'
-        self.routerExternal = 'ffffffffffff'
-        self.shared = 'ffffffffffffff'
+        network.routerExternal = 'ffffffffffff'
+        network.shared = 'ffffffffffffff'
         postdata = network.DictoJson()
 
         main.step( "Post Data via HTTP" )
@@ -1090,7 +1090,7 @@ class FUNCvirNetNB:
         subnet = SubnetData()
         subnet.id = "e44bd655-e22c-4aeb-b1e9-ea1606875178"
         subnet.enable_dhcp = 'tttttttttttttt'
-        subnet.self.shared = 'ffffffffffffff'
+        subnet.shared = 'ffffffffffffff'
         subnet.tenant_id = network.tenant_id
         subnet.network_id = network.id
 
